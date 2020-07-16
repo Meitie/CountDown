@@ -1,0 +1,174 @@
+/* LAYOUT */
+
+body {
+    background-color: #00A2E8;
+}
+
+.wrapper {
+    width: 79%;
+    display: inline-block;
+    padding: 2%;
+}
+
+.imgBack {
+    width: 8%;
+    float: left;
+}
+
+.imgBack1 {
+    width: 8%;
+    float: right;
+}
+
+.countdown {
+    font-size: 35px;
+    text-align: center;
+}
+
+
+/* CLOCK */
+
+.clock {
+    width: 100%;
+    margin: 2em auto;
+    display: block;
+    text-align: center;
+}
+
+.timer {
+    font-size: 80px;
+    margin: 0;
+    text-align: center;
+}
+
+.timerBtn {
+    width: 25%;
+    height: 55px;
+    text-align: center;
+    background-color: #042C9A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.timerReset {
+    width: 25%;
+    height: 55px;
+    text-align: center;
+    background-color: #042C9A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* TABS */
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #042C9A;
+    background-color: #00A2E8;
+}
+
+.tab button {
+    background-color: #042C9A;
+    color: #fff;
+    width: 50%;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #5895FF;
+}
+
+.tab button.active {
+    background-color: #5895FF;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #042C9A;
+    border-top: none;
+}
+
+
+/* LETTERS GAME */
+
+.lettersShown,
+.numbersShown {
+    margin: 30px auto;
+    text-align: center;
+    padding: 3%;
+    width: 100%;
+    box-sizing: border-box;
+    height: 130px;
+}
+
+.indiLetters {
+    width: 30px;
+    height: 30px;
+    padding: 3%;
+    font-size: 35px;
+    background-color: #042C9A;
+    color: #fff;
+    border: 3px solid #000;
+    font-weight: bold;
+}
+
+.lettersButton {
+    text-align: center;
+}
+
+.consonants,
+.vowels,
+.generateSum,
+.bigNum,
+.smallNum,
+.resetNum,
+.lettersReset {
+    width: 22%;
+    height: 55px;
+    background-color: #042C9A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.vowels:active,
+.consonants:active,
+.timerReset:active,
+.timerBtn:active {
+    border: none;
+    outline: none;
+}
+
+.generatedNumber {
+    text-align: center;
+}
+
+.showSumNum {
+    width: 80px;
+    height: 60px;
+    font-size: 48px;
+    padding: 1%;
+    background-color: #042C9A;
+    color: #fff;
+    border: 3px solid #000;
+    font-weight: bold;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.numbersButton {
+    text-align: center;
+}
