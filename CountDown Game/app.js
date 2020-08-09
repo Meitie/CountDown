@@ -1,23 +1,16 @@
-// let letterGame = document.querySelector('.letterGame')
-// let numberGame = document.querySelector('.numberGame')
+let lettersBtn = document.querySelector(".letterGame")
+let numbersBtn = document.querySelector(".numberGame")
+let letters = document.querySelector(".letters")
+let numbers = document.querySelector(".numbers")
 
-// let openGames = (type) => {
+lettersBtn.addEventListener("click", function(event){
+    numbers.style.display = 'none'
+    letters.style.display = 'block'
+})
 
-// }
+numbersBtn.addEventListener("click", function(event){
+    letters.style.display = 'none'
+    numbers.style.display = 'block'
+})
 
-// openGames()
-
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-document.getElementById("defaultOpen").click();
+lettersBtn.click();
