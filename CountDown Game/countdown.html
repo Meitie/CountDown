@@ -1,67 +1,56 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body class="body">
-    <img class="imgBack" src="countdown.png" alt="">
-    <div class="wrapper">
-        <h1 class="countdown">Count Down</h1>
-        <div class="clock">
-            <button class="timerBtn">Start The Clock</button>
-            <p class="timer">00:30</p>
-            <button class="timerReset">Reset</button>
-        </div>
-
-        <div class="tab">
-            <button class="letterGame tablinks" onclick="openCity(event, 'letters')" id="defaultOpen">Letters Game</button>
-            <button class="numberGame tablinks" onclick="openCity(event, 'numbers')">Numbers Game</button>
-        </div>
-
-        <!-- Letters -->
-        <div class="letters tabcontent" id="letters">
-            <div>
-                <p class="lettersShown">
-
-                </p>
-            </div>
-
-            <div class="lettersButton ">
-                <button class="consonants">Consonants</button>
-                <button class="vowels ">Vowels</button>
-                <button class="lettersReset">Reset</button>
-            </div>
-        </div>
-
-        <!--Numbers-->
-        <div class="numbers tabcontent " id="numbers">
-            <div class="generatedNumber">
-                <p class="showSumNum ">000</p>
-                <button class="generateSum ">Randomized Number</button>
-            </div>
-
-            <div class="numbersButton ">
-                <div>
-                    <p class="numbersShown "></p>
-                </div>
-                <button class="bigNum ">Big Numbers</button>
-                <button class="smallNum ">Small Numbers</button>
-                <button class="resetNum">Reset</button>
-            </div>
-        </div>
-    </div>
-    <img class="imgBack1" src="countdown.png" alt="">
-
-
-    <script src="app.js "></script>
-    <script src="letters.js "></script>
-    <script src="numbers.js "></script>
-    <script src="timer.js "></script>
-</body>
-
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Countdown</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body class="body">
+		<img class="imgBack" src="countdown.png" alt="">
+		<div class="wrapper">
+			<h1 class="countdown">Count Down</h1>
+			<div class="clock">
+				<button class="timerBtn">Start The Clock</button>
+				<p class="timer">00:30</p>
+				<button class="timerReset">Reset</button>
+			</div>
+			<div class="games">
+				<button class="letterGame">Letters Game</button>
+				<button class="numberGame" >Numbers Game</button>
+			</div>
+			<!-- Letters -->
+			<div class="letters" id="letters">
+				<div>
+					<p class="lettersShown">
+					</p>
+				</div>
+				<div class="lettersButton ">
+					<button class="consonants">Consonants</button>
+					<button class="vowels ">Vowels</button>
+					<button class="lettersReset">Reset</button>
+				</div>
+			</div>
+			<!--Numbers-->
+			<div class="numbers" id="numbers">
+				<div class="generatedNumber">
+					<p class="showSumNum ">000</p>
+					<button class="generateSum ">Randomized Number</button>
+				</div>
+				<div class="numbersButton">
+					<div>
+						<p class="numbersShown "></p>
+					</div>
+					<button class="bigNum ">Big Numbers</button>
+					<button class="smallNum ">Small Numbers</button>
+					<button class="resetNum">Reset</button>
+				</div>
+			</div>
+		</div>
+		<img class="imgBack1" src="countdown.png" alt="">
+		<script src="letters.js "></script>
+		<script src="numbers.js "></script>
+		<script src="timer.js "></script>
+		<script src="app.js"></script>
+	</body>
 </html>
