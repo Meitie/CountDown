@@ -65,39 +65,38 @@ body {
 
 
 /* TABS */
-
-.tab {
+.games {
     overflow: hidden;
     border: 1px solid #042C9A;
     background-color: #00A2E8;
 }
 
-.tab button {
+.letterGame,
+.numberGame {
     background-color: #042C9A;
+    font-size: 1.5em;
     color: #fff;
     width: 50%;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
+    padding:16px;
+    box-sizing: border-box;
 }
 
-.tab button:hover {
+.letterGame:hover,
+.numberGame:hover {
     background-color: #5895FF;
 }
 
-.tab button.active {
-    background-color: #5895FF;
-}
-
-.tabcontent {
+.numbers,
+.letters {
     display: none;
     padding: 6px 12px;
     border: 1px solid #042C9A;
     border-top: none;
+    box-sizing: border-box;
 }
 
 
